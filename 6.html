@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .option {
+          display: block;
+          margin-bottom: 1rem;
+        }
+      </style>
+</head>
+<body>
+    <h2> Output for below program is : <br> <h3>letter = 'a' <br>
+      uppercase_letter = letter.upper()<br>
+      print(uppercase_letter)</h3></h2>
+    <div class="options">
+        <label class="option">
+          <input type="radio" name="answer" value="A"> A
+        </label>
+        <label class="option">
+          <input type="radio" name="answer" value="B">B
+        </label>
+        <label class="option">
+          <input type="radio" name="answer" value="a">a
+        </label>
+      </div>
+      <button onclick="checkAnswer()">Submit</button>
+      <script>
+        function checkAnswer() {
+          const answer = document.querySelector('input[name="answer"]:checked').value;
+          if (answer ==="A") {
+           
+            location.href="7.html";
+          } else {
+            alert("InCorrect!");
+            location.href="6.1.html";
+          }
+        }
+      </script>
+    
+</body>
+</html>

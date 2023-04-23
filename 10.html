@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .option {
+          display: block;
+          margin-bottom: 1rem;
+        }
+      </style>
+</head>
+<body>
+    <h2>The letter comes when a number is converted into letter in which the number is the count of vowels in an English alphabet</h2>
+    <div class="options">
+        <label class="option">
+          <input type="radio" name="answer" value="E"> E
+        </label>
+        <label class="option">
+          <input type="radio" name="answer" value="D">D
+        </label>
+        <label class="option">
+          <input type="radio" name="answer" value="K">K
+        </label>
+      </div>
+      <button onclick="checkAnswer()">Submit</button>
+      <script>
+        function checkAnswer() {
+          const answer = document.querySelector('input[name="answer"]:checked').value;
+          if (answer ==="E") {
+            location.href="11.html";
+          } else {
+            alert("Incorrect , You have another chance to continue ")
+            location.href="10.1.html";
+          }
+        }
+      </script>
+
+
+</body>
+</html>

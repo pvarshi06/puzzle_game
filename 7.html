@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .option {
+          display: block;
+          margin-bottom: 1rem;
+        }
+      </style>
+</head>
+<body>
+    <h2>The letter which we get on rotating letter 'Z' one time in anticlockwise direction </h2>
+    <div class="options">
+        <label class="option">
+          <input type="radio" name="answer" value="N"> N
+        </label>
+        <label class="option">
+          <input type="radio" name="answer" value="M">M
+        </label>
+        <label class="option">
+          <input type="radio" name="answer" value="W">W
+        </label>
+      </div>
+      <button onclick="checkAnswer()">Submit</button>
+      <script>
+        function checkAnswer() {
+          const answer = document.querySelector('input[name="answer"]:checked').value;
+          if (answer ==="N") {
+            location.href="8.html";
+          } else {
+            alert("Incorrect , You have another chance to continue ")
+            location.href="7.1.html";
+          }
+        }
+      </script>
+
+</body>
+</html>

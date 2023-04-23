@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .option {
+          display: block;
+          margin-bottom: 1rem;
+        }
+      </style>
+</head>
+<body>
+    <h2>It's the first letter in the name of a popular programming language and environment used for web development, "Cascading Style Sheets" or CSS.</h2>
+    <div class="options">
+        <label class="option">
+          <input type="radio" name="answer" value="W"> W
+        </label>
+        <label class="option">
+          <input type="radio" name="answer" value="S">S
+        </label>
+        <label class="option">
+          <input type="radio" name="answer" value="C">C
+        </label>
+      </div>
+      <button onclick="checkAnswer()">Submit</button>
+      <script>
+        function checkAnswer() {
+          const answer = document.querySelector('input[name="answer"]:checked').value;
+          if (answer === "C") {
+            alert("Correct!");
+            location.href="6.html";
+          } else {
+            location.href="12.html";
+          }
+        }
+      </script>
+    
+</body>
+</html>

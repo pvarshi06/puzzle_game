@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .option {
+          display: block;
+          margin-bottom: 1rem;
+        }
+      </style>
+</head>
+<body>
+    <h2>It's a common programming language used for system-level development.</h2>
+    <div class="options">
+        <label class="option">
+          <input type="radio" name="answer" value="C"> C
+        </label>
+        <label class="option">
+          <input type="radio" name="answer" value="cat"> C++
+        </label>
+        <label class="option">
+          <input type="radio" name="answer" value="can"> Python
+        </label>
+      </div>
+      <button onclick="checkAnswer()">Submit</button>
+      <script>
+        function checkAnswer() {
+          const answer = document.querySelector('input[name="answer"]:checked').value;
+          if (answer === "C") {
+            location.href="6.html";
+          } else {
+            alert("Incorrect. Try again.");
+            location.href="5.1.html";
+          }
+        }
+      </script>
+    
+</body>
+</html>
