@@ -9,11 +9,33 @@
         .option {
           display: block;
           margin-bottom: 1rem;
+          font-size: 25px;
         }
+        body {
+          background-image: url('https://www.shutterstock.com/image-photo/jigsaw-puzzle-game-piece-on-260nw-521603110.jpg');
+          background-repeat: no-repeat;
+          /* background-size: cover; */
+          padding-top: 12rem;
+          background-size: 100% 795px;
+          margin-left: 250px;
+      }
+      .sb
+      {
+        background-color: rgb(110, 165, 165);
+        border: none;
+        color: black;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        justify-content: center;
+        margin-left: 370px;
+      }
       </style>
 </head>
 <body>
-    <h2>The letter that does not repeat in the word: AEIOUMOONOOM</h2>
+    <h2>The letter that does not repeat in the word: AEIOUMOONOOMAEIOU</h2>
     <div class="options">
         <label class="option">
           <input type="radio" name="answer" value="U"> U
@@ -25,7 +47,7 @@
           <input type="radio" name="answer" value="M">M
         </label>
       </div>
-      <button onclick="checkAnswer()">Submit</button>
+      <button onclick="checkAnswer()" class="sb">Submit</button>
       <script>
         function checkAnswer() {
           const answer = document.querySelector('input[name="answer"]:checked').value;

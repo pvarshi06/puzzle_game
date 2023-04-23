@@ -9,30 +9,56 @@
         .option {
           display: block;
           margin-bottom: 1rem;
+          font-size: 20px;
         }
+        h2
+        {
+          font-size: 30px;
+        }
+        body {
+          background-image: url('https://www.shutterstock.com/image-photo/jigsaw-puzzle-game-piece-on-260nw-521603110.jpg');
+          background-repeat: no-repeat;
+          /* background-size: cover; */
+          padding-top: 12rem;
+          background-size: 100% 795px;
+          margin-left: 250px;
+      }
+      .sb
+      {
+        background-color: rgb(110, 165, 165);
+        border: none;
+        color: black;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        justify-content: center;
+        margin-left: 350px;
+      }
       </style>
 </head> 
 <body>
-    <h2>It's a common programming language used for system-level development..</h2>
+    <h2>It's a common programming language used for system-level development.</h2>
     <div class="options">
         <label class="option">
-          <input type="radio" name="answer" value="C"> C
+          <input type="radio" name="answer" value="C"> <b>C</b>
         </label>
         <label class="option">
-          <input type="radio" name="answer" value="cat"> C++
+          <input type="radio" name="answer" value="cat">  <b>C++</b>
         </label>
         <label class="option">
-          <input type="radio" name="answer" value="can"> Python
+          <input type="radio" name="answer" value="can"> <b>Python</b>
         </label>
       </div>
-      <button onclick="checkAnswer()">Submit</button>
+      <button onclick="checkAnswer()" class="sb">Submit</button>
       <script>
         function checkAnswer() {
           const answer = document.querySelector('input[name="answer"]:checked').value;
           if (answer === "C") {
             location.href="6.html";
           } else {
-            alert("Incorrect. Try again.");
+            alert("Incorrect , You have another chance to continue ")
             location.href="5.1.html";
           }
         }

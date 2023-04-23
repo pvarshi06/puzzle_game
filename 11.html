@@ -5,17 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            background-image: url('https://www.shutterstock.com/image-photo/jigsaw-puzzle-game-piece-on-260nw-521603110.jpg');
+            background-repeat: no-repeat;
+            /* background-size: cover; */
+            padding-top: 12rem;
+            background-size: 100% 795px;
+            margin-left: 250px;
+        }
+        h2
+        {
+            margin-left: 400px;
+        }
+        #field
+        {
+            margin-left: 370px;
+            font-size: 20px;
+        }
+        .sb
+      {
+        background-color: rgb(110, 165, 165);
+        border: none;
+        color: black;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        justify-content: center;
+        margin-left: 450px;
+      }
+    </style>
 </head>
 <body>
     <h2>Enter Your answer</h2>
     <form>
-        <input type="text" id="field">
+        <input type="text" id="field"> <br> <br> <br>
     </form>
     <div id="container">
-        <button class="sb" onclick="check()">submit</button>
+        <button class="sb" onclick="check()" class="sb">submit</button>
         <p id="error-message"></p>
         <div id="success-page" style="display: none;">
-          <button onclick="location.href='4.html'" style="text-align: center; position: relative; top:99px; left:550px;">Click here to check the answer</button>
+          <button onclick="location.href='4.html'" style="text-align: center; position: relative; top:40px; left:400px; font-size:20px; background-color:rgb(161, 130, 192)">Click here to check the answer</button>
         </div>    
     </div>
     <script>

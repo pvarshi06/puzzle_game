@@ -3,3 +3,15 @@ h2{
     margin: 100px;
     color: brown;
 }
+/* body {
+    background-image: url('https://www.shutterstock.com/image-photo/jigsaw-puzzle-game-piece-on-260nw-521603110.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 12rem;
+    background-size: 100% 795px;
+} */
+body
+{
+    background-image: url('https://img.freepik.com/premium-vector/comic-speech-bubbles-with-text-you-win-cloud-balloon-pop-art-style-explosion-blast-with-text-stars-jackpot-congratulation-message-vintage-banner-cartoon-vector-illustration_102902-4035.jpg?w=2000');
+    background-size: 100% 780px;
+}

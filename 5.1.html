@@ -9,11 +9,34 @@
         .option {
           display: block;
           margin-bottom: 1rem;
+          font-size: 25px;
         }
+        body {
+          background-image: url('https://www.shutterstock.com/image-photo/jigsaw-puzzle-game-piece-on-260nw-521603110.jpg');
+          background-repeat: no-repeat;
+          /* background-size: cover; */
+          padding-top: 12rem;
+          background-size: 100% 795px;
+          margin-left: 250px;
+      }
+      .sb
+      {
+        background-color: rgb(110, 165, 165);
+        border: none;
+        color: black;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        justify-content: center;
+        margin-left: 370px;
+      }
       </style>
+      
 </head>
 <body>
-    <h2>It's the first letter in the name of a popular programming language and environment used for web development, "Cascading Style Sheets" or CSS.</h2>
+    <h2>It's the first letter in the name of a popular programming language and environment used <br>for web development, "Cascading Style Sheets" or CSS.</h2>
     <div class="options">
         <label class="option">
           <input type="radio" name="answer" value="W"> W
@@ -25,12 +48,11 @@
           <input type="radio" name="answer" value="C">C
         </label>
       </div>
-      <button onclick="checkAnswer()">Submit</button>
+      <button onclick="checkAnswer()" class="sb">Submit</button>
       <script>
         function checkAnswer() {
           const answer = document.querySelector('input[name="answer"]:checked').value;
           if (answer === "C") {
-            alert("Correct!");
             location.href="6.html";
           } else {
             location.href="12.html";

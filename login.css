@@ -69,3 +69,10 @@ form button[type="submit"]:hover {
 	font-size: 14px;
 	margin-top: 5px;
 }
+body {
+    background-image: url('https://www.shutterstock.com/image-photo/jigsaw-puzzle-game-piece-on-260nw-521603110.jpg');
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    padding-top: 12rem;
+    background-size: 100% 795px;
+}
